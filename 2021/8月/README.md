@@ -1,6 +1,3 @@
-
-
-
 ---
 sidebar: auto
 sidebarDepth: 3
