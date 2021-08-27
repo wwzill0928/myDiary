@@ -15,6 +15,223 @@
       type="text/javascript"
       src="https://webapi.amap.com/maps?v=1.4.15&key=aaa29664e68876b8ac0ccf871c2318e1&plugin=AMap.MarkerClusterer,AMap.ToolBar,AMap.Geocoder,AMap.Geolocation,AMap.MapType,AMap.DistrictSearch,AMap.DistrictLayer,AMap.PlaceSearch,AMap.Autocomplete,AMap.Heatmap"
     ></script>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        color: #000;
+      }
+      .header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: sticky;
+        top: 0;
+        height: 110px;
+        background-color: #fff;
+        margin-bottom: 70px;
+        z-index: 100;
+      }
+      .header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: sticky;
+        top: 0;
+        height: 110px;
+      }
+      .header .logo{
+        position: absolute;
+        left: 100px;
+        font-size: 24px;
+        font-weight: bold;
+      }
+      .header .nav{
+        display: flex;
+        align-items: center;
+      }
+      .header .nav>div{
+        margin: 0 30px;
+        font-size: 18px;
+      }
+      .one_box{
+        width: 50vw;
+      }
+      .one_box .img_box{
+        width: 100%;
+        height: calc(100vh - 180px);
+        overflow: hidden;
+        position: relative;
+      }
+      .one_box .img_box img{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+        opacity: 1;
+        transition: opacity 500ms ease 0s;
+      }
+      .index_title_one_box{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          width: 50vw;
+      }
+      .index_title_one_box .more{
+        margin-top: 55px;
+        margin-bottom: 18px;
+        font-size: 12px;
+        
+        color: rgb(18, 18, 18);
+      }
+      .index_title_one_box .name{
+        font-size: 50px;
+        color: #000;
+      }
+      .index_title_one_box .time{
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-size: 12px;
+        color: rgb(18, 18, 18);
+      }
+      .index_title_two_box{
+        margin-top: 120px;
+        margin-bottom: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+      }
+      .index_two_box{
+        display: flex;
+        width: 100%;
+        padding: 0 68px;
+        margin: 0 auto;
+        justify-content: space-between;
+      }
+      .index_two_box > div{
+        width: 19%;
+        flex: 0 0 auto;
+      }
+      .index_two_box > div > div{
+        padding-bottom: 100%;
+        position: relative;
+      }
+      .index_two_box > div > div > img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+      }
+      @media (max-width: 1279px){
+        .index_two_box > div{
+          width: 22%;
+        }
+        .index_two_box > div:last-child {
+          display: none;
+        }
+      }
+      
+      .index_three_box{
+        display: flex;
+        margin-top: 200px;
+      }
+      .index_three_box .leftArea{
+        padding: 0 90px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        line-height: 2.8125vw;
+      }
+      .index_three_box .leftArea .name{
+        font-size: 56px;
+        font-weight: bold;
+      }
+      .index_three_box .leftArea .txt{
+        font-size: 18px;
+        margin-bottom: 40px;
+        color: rgb(18, 18, 18);
+      }
+      .index_three_box .rightArea{
+        width: 40vw;
+        flex: 0 0 auto;
+      }
+      .index_three_box .rightArea > div{
+        padding-top: 110%;
+        position: relative;
+      
+      }
+      .index_three_box .rightArea > div img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+      }
+
+
+     
+      .index_title_four_box{
+        margin-top: 160px;
+        margin-bottom: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+      }
+      .index_four_box{
+        display: flex;
+        width: 100%;
+        padding: 0 68px;
+        margin: 0 auto;
+        justify-content: space-between;
+      }
+      .index_four_box > div{
+        width: 15%;
+        flex: 0 0 auto;
+      }
+      .index_four_box > div > div{
+        padding-bottom: 100%;
+        position: relative;
+      }
+      .index_four_box > div > div > img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+      }
+      .index_four_box > div:last-child > div{
+        padding-bottom: 180%;
+      }
+      .footer{
+        height: 60px;
+        background-color: #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 230px;
+      }
+      .footer a{
+        color: #fff;
+        letter-spacing: 0.5px;
+        font-size: 1.09375vw;
+        text-decoration: none;
+      }
+    
+    </style>
   </head>
   
   <body>
@@ -22,7 +239,85 @@
       <strong>We're sorry but 北七酱 doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
     <div id="app">
-      dfgddfgdf
+        <div class="header">
+          <div class="logo">北七酱</div>
+          <div class="nav">
+            <div>Js</div>
+            <div>Css</div>
+            <div>Vue</div>
+            <div>Diary</div>
+          </div>
+        </div>
+
+        <div class="one_box">
+          <div class="img_box">
+            <img src="./imgs/index/1.jpg">
+          </div>
+        </div>
+        <div class="index_title_one_box">
+          <div class="more">VIEW MORE PHOTO</div>
+          <div class="name">activity</div>
+          <div class="time">2021-08-27</div>
+        </div>
+
+
+        <div class="one_box">
+          <div class="img_box">
+            <img src="./imgs/index/2.jpg">
+          </div>
+        </div>
+        <div class="index_title_one_box">
+          <div class="more">VIEW MORE PHOTO</div>
+          <div class="name">activity</div>
+          <div class="time">2021-08-27</div>
+        </div>
+
+
+        <div class="index_title_two_box">
+         Instagram
+        </div>
+        <div class="index_two_box">
+          <div><div><img src="./imgs/index/2.jpg"> </div></div>
+          <div><div><img src="./imgs/index/2.jpg"> </div> </div>
+          <div><div><img src="./imgs/index/2.jpg"> </div></div>
+          <div><div><img src="./imgs/index/2.jpg"> </div></div>
+          <div><div><img src="./imgs/index/2.jpg"> </div></div>
+        </div>
+
+
+        <div class="index_three_box">
+          <div class="leftArea">
+            <div class="name">How Coffee</div> 
+            <div>
+              <div class="txt">
+                <div >sdfsdfs</div>
+                <div>sdfsdfs</div>
+              </div>
+              
+              <div class="desc">2019年5月に福岡の中心街である天神に位置する旧大名小学校1Fに、アートとデザインをコンセプトにしたコーヒーショップHowlt Coffeeをオープンしました。厳選した豆を使用したこだわりの美味しいコーヒーや季節限定のドリンクに加え、Howlt(ホルト)のオリジナルの商品や世界中からセレクトした現代アーティストのグッズなど多数ご用意しております。</div>
+            </div>
+          </div>
+          <div class="rightArea"><div><img src="./imgs/index/2.jpg"> </div></div>
+        </div>
+
+
+        <div class="index_title_four_box">
+          <img src="./_svg/index/ins.svg"> Instagram
+        </div>
+        <div class="index_four_box">
+          <div><div><img src="./imgs/index/2.jpg"> </div></div>
+          <div><div><img src="./imgs/index/2.jpg"> </div> </div>
+          <div><div><img src="./imgs/index/2.jpg"> </div></div>
+          <div><div><img src="./imgs/index/2.jpg"> </div></div>
+        </div>
+
+
+        <div class="footer">
+          <a href="http://beian.miit.gov.cn" target="_blank">
+            闽ICP备19013965号-2
+          </a>
+        </div>
+     
     </div>
     <!-- built files will be auto injected -->
   </body>
