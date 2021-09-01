@@ -10,11 +10,11 @@ sidebarDepth: 5
     我觉得她的作息时间需要改一下。
 
     我可爱的九月来了。
-![我的图片](./2jpg)
+![我的图片](https://github.com/wwzill0928/myDiary/blob/main/diary/2021/Sept/2.jpg)
     33
-    <img src="./2jpg" width="50%">
+    <img src="https://github.com/wwzill0928/myDiary/blob/main/diary/2021/Sept/2.jpg" width="50%">
     44
-    |  表头   | 表头  |
+    |  1表头   | 表头  |
     |  ----  | ----  |
     | 单元格  | 单元格 |
     | 单元格  | 单元格 |
