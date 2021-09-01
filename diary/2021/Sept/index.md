@@ -13,8 +13,9 @@ sidebarDepth: 5
 ![我的图片](https://github.com/wwzill0928/myDiary/blob/main/diary/2021/Sept/2.jpg)
     33
     <img src="https://github.com/wwzill0928/myDiary/blob/main/diary/2021/Sept/2.jpg" width="50%">
+    <img src="http://static.runoob.com/images/runoob-logo.png" width="50%">
     44
-    |  1表头   | 表头  |
+    |  1表头   | 2头  |
     |  ----  | ----  |
     | 单元格  | 单元格 |
     | 单元格  | 单元格 |
