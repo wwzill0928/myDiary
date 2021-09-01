@@ -12,5 +12,7 @@ sidebarDepth: 5
     我可爱的九月来了。
 ![我的图片](./2jpg)
     33
+    <img src="./2jpg" width="50%">
+    44
 
 
